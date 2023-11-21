@@ -93,6 +93,9 @@ a {
     box-shadow: 0 -2px #0065FC;
     color: #0065FC;               
 }
+.naviguation ul :active {
+    color: #0065FC;
+}
 /********Formulaire de recharche******/
 .search{
     display: flex;
@@ -140,8 +143,10 @@ input[type="text"] {
     border: 2px solid #D9D9D9;
     margin: 10px;
     border-radius: 25px;
-    font-weight: bold;
-    
+    font-weight: bold;    
+}
+.Filters :hover{
+    background-color:#DEEBFF ;
 }
 .Filters i {
     color: #0065FC;
@@ -315,7 +320,39 @@ input[type="text"] {
     padding-left: 10px;
     padding-bottom: 20px;
 }
+/******Footer*****/
+.footer-contain{
+    display: flex;
+    text-align:left;
+    background-color: #f2f2f2;
+        
+}
+.footer-contain ul {
+    list-style: none;
+    padding: 0px;
+    height: 19px;
+}
+.propos {    
+    width: 446px;
+    height: 163px;
+    padding: 20px;
+    gap: 15px   ;   
+}   
+.heb{
+ 
+    width: 446px;
+    height: 163px;
+    padding: 20px;
 
+}
+
+.assitance {
+    padding: 20px;
+    width: 446px;
+    height: 163px;  
+}
+
+  
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -325,6 +362,7 @@ input[type="text"] {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+    
     }
 
     .hebergements {
@@ -334,7 +372,7 @@ input[type="text"] {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 50px;    
     }
 
     .populaires-cards {
@@ -360,3 +398,42 @@ input[type="text"] {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+    
+
+@media (max-width:375px) {
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;        
+    }
+    .populaires{
+        width: 375PX                 
+    }
+    .populaires-cards{
+        flex-direction: column;
+        height: 569px;
+        width: 375px;
+        
+        
+        
+        
+    }
+    .card{
+        
+        width: 100%;
+        max-width: 300%;
+        
+    }
+    .hebergement-card {
+        width: 100%;
+    }
+    .main-container{
+        padding: 0;
+    }
+    }
+    
