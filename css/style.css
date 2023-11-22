@@ -61,25 +61,28 @@ a {
 
 .naviguation {
    display: flex;
+    margin: 0;
+    padding-bottom: 60px;
 }
 .header {
     
     width: 1440px;
     height: 79px;
+    padding-bottom: 10px;
 
 }
 .header-content img {
     width: 69.09px;
     height: 19px;
 }
-.naviguation ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
+
+
 .naviguation a {
     margin: 0 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    
+    
      
 }
 .header-content {
@@ -88,14 +91,12 @@ a {
     justify-content: space-between;
     height: 80px;   
 }
-.naviguation ul  :hover {
-    transform: translateY(-4px);
-    box-shadow: 0 -2px #0065FC;
-    color: #0065FC;               
+nav.naviguation a:hover {   
+    border-top: solid 2px var(--main-color);               
+    color: var(--main-color);
+    
 }
-.naviguation ul :active {
-    color: #0065FC;
-}
+    
 /********Formulaire de recharche******/
 .search{
     display: flex;
@@ -106,7 +107,7 @@ a {
 }
 .search-container{
     display: flex;
-    margin: 20px;
+    margin: 20px 0px;
        
 }
 .fa-map-marker-alt {
@@ -115,16 +116,18 @@ a {
     border-radius: 15px 0px 0px 15px; 
     align-items: center;
     width: 50px;
-     justify-content: center;
-     border: none;    
+    justify-content: center;
+    border: none;    
 }
 .bouton {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 15px 15px 0px;
     size: 18px;
-    font-style: bold ;
+    font-style: 700 ;
     border: none;
+    padding: 0px 15px;
+    
 }
 .bouton i {
     display: none;
@@ -134,7 +137,15 @@ input[type="text"] {
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
-    border-right: none; 
+    border-right: none;
+    padding-left: 20px;
+               
+}
+::placeholder{
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
     
 }
 .Filters{
@@ -143,7 +154,7 @@ input[type="text"] {
     flex-direction: row;
 }
 .Filters a {
-    padding: 4px 19px 4px 19px;
+    padding: 10px  16px;
     border: 2px solid #D9D9D9;
     margin: 5px;
     border-radius: 25px;
@@ -196,19 +207,20 @@ input[type="text"] {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 67%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    
 }  
 .container {
     margin: 0px;
     box-sizing: border-box;
-    width: 250px;
+    width: 240px;
     height: 207px;
+    text-overflow: ellipsis;
 }
 .hebergement-card img {
- 
+    width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
       
@@ -217,11 +229,13 @@ input[type="text"] {
     
     margin: 0px;
     font-size: 13px;
+    
  }
  .hebergement-card {
     display: flex;
     margin-top: 33px;
-    flex-direction: column;
+    flex-direction: row;
+    text-overflow: ellipsis;
  }
  .hebergement-card .card {
     display: flex;
@@ -230,9 +244,9 @@ input[type="text"] {
     margin: 10px;
 }
 .hebergement-card .card-content {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    padding: 0px, 0px, 15px, 0px;
+    padding: 0px 0px 15px 0px;
     
     
 }
@@ -334,6 +348,7 @@ input[type="text"] {
     display: flex;
     text-align:left;
     background-color: #f2f2f2;
+    
         
 }
 .footer-contain ul {
@@ -345,21 +360,10 @@ input[type="text"] {
     width: 446px;
     height: 163px;
     padding: 20px;
-    gap: 15px   ;   
+    gap: 15px   ;
+    line-height: 30px;   
 }   
-.heb{
- 
-    width: 446px;
-    height: 163px;
-    padding: 20px;
 
-}
-
-.assitance {
-    padding: 20px;
-    width: 446px;
-    height: 163px;  
-}
 
   
 
@@ -408,10 +412,19 @@ input[type="text"] {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .search{
-        width: 100%;
+    .search-container{
+        display: flex;
+         width: 100%;
         max-width: none;
+        padding: 0px;
+        vertical-align: center;
+        margin: 0%;
     }
+    .input[type="text"] , .search{
+        width: calc(100% - 10px);
+       box-sizing: border-box;
+       max-width: none;  
+    }      
     .bouton h3{
         display: none;
     }
@@ -449,7 +462,10 @@ input[type="text"] {
     }
     .populaires{
         width: 100%;
-        border-radius: 0px;                    
+        border-radius: 0px;
+        padding: 0%;
+        margin: 0%;
+                          
     }
     
     .populaires-cards{
