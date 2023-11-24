@@ -152,11 +152,12 @@ input[type="text"] {
     display: flex;
     align-items: center;   
     flex-direction: row;
+    margin: 10px ;
 }
 .Filters a {
     padding: 10px  16px;
     border: 2px solid #D9D9D9;
-    margin: 5px;
+    margin: 10px;
     border-radius: 25px;
     font-weight: bold;
         
@@ -210,63 +211,71 @@ input[type="text"] {
     width: 67%;
     display: flex;
     flex-wrap: wrap;
-    
-}  
-.container {
-    margin: 0px;
-    box-sizing: border-box;
-    width: 240px;
-    height: 207px;
-    text-overflow: ellipsis;
+   
 }
+  
 .hebergement-card img {
     width: 100%;
-    height: 124px;
-    border-radius: 20px 20px 0px 0px;
-      
+    max-height: 100px;
+    border-radius: 20px 20px 0px 0px;   
  }
- .hebergement-card .card-txt{
-    
+ .hebergement-card .card-txt{    
     margin: 0px;
-    font-size: 13px;
+    font-size: 13px;   
+ }
+ .hebergement-card { 
+    max-height: 207px;
+    max-width: 250px;
+    width: 32%;
+    height: 207px;
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px);
+    text-overflow: ellipsis;
+    
     
  }
- .hebergement-card {
-    display: flex;
-    margin-top: 33px;
-    flex-direction: row;
-    text-overflow: ellipsis;
+ .hebergements a {
+    
+    width: 100%;
+    max-width: 250px;
  }
+ .hebergements article {
+    max-width: 250px;
+    width: 100%;
+ }
+
  .hebergement-card .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
     flex-direction: column;
-    margin: 10px;
+    margin: 10px;    
+
 }
 .hebergement-card .card-content {
-    display: grid;
+    display: flex;
     flex-direction: column;
     padding: 0px 0px 15px 0px;
-    
-    
+    text-overflow: ellipsis;   
 }
 .hebergements-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 811px;
+    max-width: 811px;
     height: 26px;
-
+    width: 100%;
 }
 .hebergement-card .card-title { 
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 4px;
     
+    
 }
 .hebergement-card .card-subtitle{
     margin-top: 10px;
     margin-bottom: 4px;
+    
 }
 
 
@@ -480,9 +489,10 @@ input[type="text"] {
         
     }
     
-    .hebergement-card , .container {
+    .hebergement-card {
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
         
     }
     .hebergements-and-populaires .hebergements{
