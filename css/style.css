@@ -60,8 +60,8 @@ a {
 /*****Naviguation****/
 
 .naviguation {
-   display: flex;
-    margin: 0;
+   padding-top: 19px;
+    margin: 35px;
     padding-bottom: 60px;
 }
 .navbar{
@@ -83,7 +83,7 @@ a {
 .naviguation a {
     margin: 0 15px;
     padding-bottom: 10px;
-    padding-top: 5px;
+    padding-top: 16px;
     margin-left: 50px;
     align-items: center;
     box-sizing: border-box;
@@ -168,6 +168,11 @@ input[type="text"] {
     padding: auto;
     
 }
+.Filtres{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
 
 .Filters{
     flex-wrap: wrap;
@@ -175,17 +180,20 @@ input[type="text"] {
     border-radius: 25px;
      
 }
-.Filters h3{
-    margin-right: 20px;
+.Filtres h3{
+    padding-right: 20px;
+    flex-wrap: nowrap ;
 }
-.boutton span {
+.boutton a span {
     padding: 2px;
     padding-right: 15px;
     align-items: center;
-    
+}   
+ .boutton {
+    display: flex;
 
-}
-.boutton{
+} 
+.boutton a{
     display: flex;
     align-items: center;
     border: 2px solid #D9D9D9;
@@ -199,11 +207,11 @@ input[type="text"] {
 }
 
       
-.Filters   :hover:not(i,h3){
+.boutton a:hover{
     background-color:#DEEBFF ;
     border-radius: 25px;
 }
-.Filters i {
+.boutton i {
     color: #0065FC;
     padding: 10px;
     
@@ -395,22 +403,18 @@ margin-bottom: 0px;
 }
     /******Activite******/
   
-#Activités {
-    display: flex;
-    flex-wrap: wrap;           
- }
- #Activités .card-container{
+
+ #Activités .ActiviteContent{
     display: flex;
     justify-content: center;      
  }
  #Activités a {
-    max-width: 297px;
-    margin: 15px;
+    width: 18.5vw;
+    margin: 25px;
  }
 #Activités img {
-    max-width: 297px;
-    width: 110%;
-    height: 380px ;
+    width: 100%;
+    height: 25vw ;
     border-radius: 20px 20px 0px 0px;
     justify-content: center; 
     align-items: center;    
@@ -418,7 +422,7 @@ margin-bottom: 0px;
 #Activités .card{
     padding: 0px;
     margin: 10px;
-    width: 100%; 
+    width: 19.5VW;
     margin: 10px;    
 }
 
@@ -474,6 +478,11 @@ margin-bottom: 0px;
    .Acceuil-title{
     padding-bottom: 10px;
    }
+   .Filtres{
+    display: flex;
+    
+    flex-direction: column;
+   }
     .card {
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
        
@@ -483,8 +492,8 @@ margin-bottom: 0px;
     }
     .hebergements {
         min-height: 611px;
-        width: 104%;
-        height: 100%;   
+        width: 100%;
+     
     }
     .hebergements .card{
         max-width: 268px;
@@ -495,9 +504,7 @@ margin-bottom: 0px;
         flex-wrap: wrap;
         padding-right: 775px; 
     }
-    .boutton{
-        min
-    }
+    
     .hebergements .card-subtitle{
         padding-left: 10px;
         padding-top: 10px;
@@ -512,14 +519,15 @@ margin-bottom: 0px;
     .populaires {
         align-items: center;
         max-width: 924px;
-        width: 106%;
+        width: 100%;
     }
     .populaires a{
         display: flex;
-        min-width: 274px;
+        width: 100%;
         padding: 10px;
     }
     .populaires-cards .card{
+        display: flex;
         max-width: 274px;
         width: 106%;
     }
@@ -538,99 +546,81 @@ margin-bottom: 0px;
     
     #Activités  {   
         display: flex;
-        padding-left: 15px;
-        height: 21%;
-        flex-wrap: wrap;
+         flex-wrap: wrap;
         width: 100%;
-                
+       
+    }
+    .ActiviteContent{
+        display: flex;
+    }
+    .ActiviteContent .card {
+        height: 27.5vw;      
+    }
+
+    #Activités a{
+        box-sizing: border-box;
+        width: 20vw;
+        height: 27.5vw;
+        margin: 10px;
+    }
+
+    #Activités img {
+        height: 20.5vw;
     }
     
-    #Activités .card{
-        display: flex;
-        max-height: 200px;
-        height: 100%;
-        max-width: 194px;
-        width: 100%;
-                
-    }
+         
+    
     #Activités .section-title  {
         display: flex;
         width: 873px;
-        height: 30px;
-        flex-wrap: nowrap; 
-        padding: 50px 0px 10px 0px; 
+        height: 30px;   
+        padding: 5px 0px 10px 0px; 
         margin: 0px;     
     }
    
     #Activités .card-title {
         display: flex;
-        padding-top: 15px;
-        width: 100%;
-    }
-    #Activités img{
-        height: 700%;
-        max-height: 200px;
-        width: 100%;
-        min-width: 194px;
-    }
-    #Activités .problem {
-        width: 197px;
-    }
-    .activite-content{
-        flex-direction: column;
-        display: flex;
-        background-color: white;
-        border-radius: 20px; 
-        max-height: 270px;
-        height: 135%;
-        width: 100%; 
-         
-    }
-    #Activités .card-container{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        max-width: 197px;
-        padding: 0px 10px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
         
     }
-    #Activités  .activite-content .problem  {
-        height: 200px;
-    }
+   
+   
+   
+    
+    
      
     .footer-contain{
     margin-top: 100px;
     
-} 
-   
-   
+}
+    
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
     nav.naviguation a:hover{
         border-top: none;
         border-bottom: solid 2px var(--main-color);               
         color: var(--main-color);
+        
     }
-     .naviguation a {
-        margin: 40px 0px 0px 0px;
-        border-bottom: 2px solid #dad3d3;
+     .naviguation a { 
+        text-align:center ;
         align-items: center;
-        padding-left: 50px;
-        padding-right: 35px;
         width: 50%;
         max-width: 384px;
-
     }
     .naviguation{
         display: flex;
-        max-width: 768px;
-        min-width: 375px;
         width: 100%;
+        border-bottom: 2px solid #dad3d3;
+        margin: 0px;
+        padding-bottom: 5px;
     }
     .Acceuil-title h2{
-        padding-top: 20px;
+        padding-top: 10px;
         padding-left: 10px;
     }  
     .Acceuil-title p {
@@ -703,22 +693,15 @@ margin-bottom: 0px;
         
     }
     .boutton {
-        padding: 15px;
-        margin: 5px 8px;
-        width: 45%;
-        box-sizing: border-box;
-        flex-grow: inherit;          
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;         
     }
     .Filters h3{
-        margin-right: 300px;
+        margin-right: 100px;
         padding-left: 10px;
         margin-top: 10px;
         width: 100%;
-    }
-    .Filters{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;   
     }
     .Filters a {
         display: flex;
@@ -798,44 +781,38 @@ margin-bottom: 0px;
     .main-container{
         padding: 0px;
     }
-    #Activités .section-title{
-        padding: 10px;
-        width: 100%;
-    }
+   
     #Activités{
-        display: flex;
-        flex-direction: column;
-        width: 84%;
-        align-items: center;
-        flex-wrap: nowrap;
+
         padding-bottom: 25px;
     }
     #Activités .card{
-        min-width: 315px;
-        margin-bottom: 50px;
-        max-height: 200px;
+        width: 84.5vw;
+        height: 54vw;
+       
         
     }
-    .activite-content{
-        height: 200px;
-        width: 315px;
-        
+    .ActiviteContent {
+        display: flex;
+        flex-direction: column;
+
+    }  
+    #Activités a {
+        width: 85vw;
+        height: 54vw;
     }
-    #Activités .problem{
-        width: 100%;
-    }
+    
+    
     #Activités .card-title{
         width: 100%;
     }
     #Activités .card-container{
-        height: 200px;
-        margin-bottom: 30px;
+       height: 54vw;
     }  
    
     #Activités img { 
-        height: 141px;
-        width: 100%;
-        min-width: 315px;
+        width: 84.5vw;
+        height: 38vw;
     }
     .footer {
         width: 375px;
