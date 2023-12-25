@@ -14,7 +14,6 @@
 }
 
 body {
-    display: flex;
     justify-content: center;
 }
 
@@ -87,12 +86,7 @@ a {
     margin-left: 50px;
     align-items: center;
     box-sizing: border-box;
-    border-top: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
-    
-    
-    
-     
+    border-top: 2px solid transparent;          
 }
 .header-content {
     display: flex;
@@ -259,58 +253,52 @@ input[type="text"] {
     width: 65%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;  
+    justify-content: space-around;
+    height: 611px;  
 }
-.hebergements h3{
+.hebergements h3:not(.plus-tittle) {
+    width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 10px;  
+    padding-bottom: 30px;  
+}
+.hebergement-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
   
 .hebergement-card img {
     width: 100%;
-    max-height: 100px;
+    height: 124px;
     border-radius: 20px 20px 0px 0px;   
  }
  .hebergement-card .card-txt{    
     margin: 0px;
     font-size: 13px;   
  }
- .hebergement-card { 
-    max-height: 207px;
-    max-width: 250px;
-    width: 30%;
-    height: 207px;
-    
-    flex-basis: calc(33.333% - 20px);   
- }
- .hebergements a { 
-    width: 100%;
-    max-width: 250px;
- }
- .hebergements article {
-    width: 100%;
-    
- }
 
  .hebergement-card .card {
     display: flex;
-    margin-top: 0px;
     flex-direction: column;
-    margin-bottom:  5px;    
+    margin-bottom:  5px;
+     margin-top: 0px;
+    width: 14.5vw; 
+    height: 207px;
+    max-width: 250px;   
 
 }
 .hebergement-card .card-content {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 15px 0px;
-    text-overflow: ellipsis;   
+    padding: 0px 0px 0px 0px;
+    text-overflow: ellipsis; 
+    height: 6.3vw;  
 }
 .hebergements-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 26px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -318,36 +306,32 @@ input[type="text"] {
 }
 .hebergement-card .card-title { 
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 4px;
     position: absolute; 
     width: 80%;
-    padding-top: 5px;    
+    padding-top: 5px; 
+    padding-left: 10px;   
 }
 .hebergement-card .card-subtitle{
-    margin-top: 36px;
-    margin-bottom: 4%;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-left:10px ;
     
 }
 
 
-.hebergement-cards .card-rating {
-    margin-bottom: 5px;
+.hebergement-container .card-rating {
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
-.plus {
-    text-align: center;  
+.plus-tittle { 
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-.plus h3{
-text-align: left;
-padding-left: 10px;
-font-weight: 700;
-font: size 18px; 
-margin-bottom: 0px;
     
 }
+
 
 
 
@@ -356,11 +340,25 @@ margin-bottom: 0px;
 .populaires {
     width: 32%;
 }
+.fa-chart-line{
+    
+   padding-left: 122px;
+
+}
+.populaires h2{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+}
+
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+    
 }
 
 .populaires-cards .card {
@@ -490,16 +488,15 @@ margin-bottom: 0px;
     .hebergements {
         width: 100%;
     }
-    .hebergements a {
-        width: 10vw;
+    .hebergement-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
-    .hebergement-card{
-        padding: 0px 10px;
-        width: 10vw;
-    }
+    
     .hebergements .card{
-        
-        width: 100%;
+        height: 207px;
+        width: 25vw;
     }
     
     .filters-title{
@@ -607,12 +604,12 @@ margin-bottom: 0px;
         width: 50%;
         margin: 0px;
         padding-bottom: 10px; 
-        
+        border-bottom: 2px solid #dad3d3;
     }
     .naviguation{
         display: flex;
         width: 100%;
-        border-bottom: 2px solid #dad3d3;
+        
         padding-bottom: 0px;
     }
     .Acceuil-title h2{
@@ -627,27 +624,23 @@ margin-bottom: 0px;
         display: flex;
         width: 100%;
         padding-left: 10px;
-        height: 50px  ;
+        height: 50px;
     }
-    .search{
-        max-width: 375px;
+    .search{   
         width: 100%;
     }
     .input[type="text"]  .search{
         display: flex  ;
         width:100%;
-        box-sizing: border-box;
-         max-width: none;
-        
+        box-sizing: border-box;      
     }
     input[type="text"]{
         display: flex;
         padding: 1px 40px;
-        width: 150px;
-        
+        width: 100%;     
     }
     .fa-map-marker-alt{
-        width: 13vw;
+        width: 26vw;
     }
     
     ::placeholder{
@@ -660,6 +653,8 @@ margin-bottom: 0px;
         border-radius: 15px;
         align-items: center;
         padding-left: 10px;
+        transform: translateX(-10px);
+
     }     
     .bouton h3{
         display: none;
@@ -680,7 +675,10 @@ margin-bottom: 0px;
         flex-direction: column;
 
     }
-    .boutton a{
+    .boutton i {
+        font-size: 19px;
+    }
+    .boutton a {
         padding: 5px;
         margin: 2px;
     }
@@ -694,7 +692,7 @@ margin-bottom: 0px;
     .boutton {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px; 
+        gap: 15px; 
         padding: 15px;
                 
     }
@@ -753,33 +751,30 @@ margin-bottom: 0px;
     .hebergements .card{
         width: 87vw;
         margin: 10px;
-        
+        max-width: none;
     }
-    
-    
-    .hebergements-and-populaires .hebergements{
-        padding-top: 20px;
+    .hebergement-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        flex-wrap: nowrap;
+        gap: 0px;
+        
+    } 
+    .hebergements-and-populaires .hebergements{
+        padding-top: 20px;
+        height: 425vw;
         padding-left: 5px;
-    }
-    .hebergements a {
-        max-width: 315px;
-    
-    }    
+        margin-bottom: 60px;
+    }  
     .hebergement-card {
-        display: flex;
-        width: 100vw;
+        
         height: 207px;
         padding: 10px 0px; 
     }
     .hebergements-title{
         padding-right: 20px
     }
-    .card-link{
-        width: 100%;
-    }
+    
     .hebergements-and-populaires .hebergements{
         background-color:white;
         padding-top: 15px;
