@@ -261,12 +261,13 @@ input[type="text"] {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-bottom: 30px;  
+    padding-bottom: 0px;  
 }
 .hebergement-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding-top: 30px;
 }
   
 .hebergement-card img {
@@ -758,8 +759,11 @@ input[type="text"] {
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 0px;
+        padding-top: 0px;
+        padding-left: 15px;
         
-    } 
+    }
+    
     .hebergements-and-populaires .hebergements{
         padding-top: 20px;
         height: 425vw;
@@ -769,7 +773,7 @@ input[type="text"] {
     .hebergement-card {
         display: flex;
         height: 207px;
-        padding: 15px 0px; 
+        padding: 20px 0px; 
     }
     .hebergements-title{
         padding-right: 20px
@@ -786,6 +790,7 @@ input[type="text"] {
     }
     .plus-tittle{
         padding-left: 15px;
+        padding-bottom: 11px;
     }
    
     #Activités{
