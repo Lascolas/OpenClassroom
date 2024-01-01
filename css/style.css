@@ -257,11 +257,11 @@ input[type="text"] {
     justify-content: space-around;
     height: 614px;  
 }
-.hebergements h3:not(.plus-tittle) {
+.hebergements h3 {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-bottom: 0px;  
+      
 }
 .hebergement-container{
     display: grid;
@@ -277,7 +277,8 @@ input[type="text"] {
  }
  .hebergement-card .card-txt{    
     margin: 0px;
-    font-size: 13px;   
+    font-size: 13px;
+       
  }
 
  .hebergement-card .card {
@@ -297,23 +298,25 @@ input[type="text"] {
     text-overflow: ellipsis; 
     height: 6.3vw;  
 }
+
 .hebergements-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    
 }
+
 .hebergement-card .card-title { 
-    flex-direction: column;
     margin-top: 2px;
     margin-bottom: 4px;
     position: absolute; 
     width: 80%;
     padding-top: 5px; 
-    padding-left: 10px;   
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;        
 }
 .hebergement-card .card-subtitle{
     margin-top: 30px;
@@ -334,34 +337,28 @@ input[type="text"] {
     
 }
 
-
-
-
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
     height: 614px;
 }
-.fa-chart-line{
-    
-   padding-left: 122px;
 
-}
 .populaires h2{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    justify-content: space-between;
     
 }
-
+.fa-chart-line {
+    width: 18px;
+}
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;       
 }
 
 .populaires-cards .card {
@@ -426,20 +423,15 @@ input[type="text"] {
 
 
 #Activités .card-title {
-   
     text-align: left;
     align-items: center;
     padding-left: 10px;
-    white-space: nowrap;
     padding-bottom: 20px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: inherit;
+    
 }
 #Activités .section-title{
-    margin: 40px 0px 15px 0px; 
-    height: 30px; 
-    padding-right: 80%;
+    margin: 40px 0px 15px 65px; 
+
      
 }
 
@@ -524,6 +516,7 @@ input[type="text"] {
         align-items: center;
         max-width: 924px;
         width: 100%;
+        height: auto;
     }
     .populaires a{
         display: flex;
@@ -557,7 +550,7 @@ input[type="text"] {
         display: flex;
     }
     .ActiviteContent .card {
-        height: 27.5vw;      
+        height: 29vw;      
     }
 
     #Activités a{
@@ -644,11 +637,11 @@ input[type="text"] {
     }
     input[type="text"]{
         display: flex;
-        padding: 1px 40px;
+        
         width: 100%;     
     }
     .fa-map-marker-alt{
-        width: 26vw;
+        width:4.5em;
     }
     
     ::placeholder{
@@ -657,7 +650,7 @@ input[type="text"] {
     } 
     .bouton{
         display: flex;
-        max-width: 49px;
+        width: 50px;
         border-radius: 15px;
         align-items: center;
         padding-left: 10px;
@@ -736,6 +729,8 @@ input[type="text"] {
     }
     .populaires h2{
         padding: 10px 15px;
+        justify-content: space-between;
+        width: 90%;
     }
     
     .populaires-cards{
@@ -769,7 +764,7 @@ input[type="text"] {
     
     .hebergements-and-populaires .hebergements{
         padding-top: 20px;
-        height: 425vw;
+        height: auto;
         padding-left: 5px;
         margin-bottom: 60px;
     }  
@@ -812,7 +807,7 @@ input[type="text"] {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-left: 15px;
+        padding-left: 5px;
 
     }  
     #Activités a {
@@ -834,7 +829,8 @@ input[type="text"] {
    
     #Activités img { 
         width: 84vw;
-        height: 38vw;
+        height: 141px;
+        
     }
     .footer {
         width: 375px;
