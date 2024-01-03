@@ -133,15 +133,16 @@ nav.naviguation a:hover {
     justify-content: center;
     border: none;    
 }
-.bouton {
+.bouton  {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 15px 15px 0px;
-    size: 18px;
-    font-style: 700 ;
     border: none;
-    padding: 0px 15px;
-    
+    padding: 0px 15px;    
+}
+.bouton span {
+    font-size: 15px;
+    font-weight: bold;
 }
 .bouton i {
     display: none;
@@ -159,9 +160,7 @@ input[type="text"] {
     font-weight: bold;
     text-align: center;
     font-size: 16px;
-    color: #000;
-    padding: auto;
-    
+    color: #000;   
 }
 .Filtres{
     display: flex;
@@ -266,7 +265,7 @@ input[type="text"] {
 .hebergement-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 12px;
     padding-top: 30px;
 }
   
