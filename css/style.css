@@ -798,7 +798,7 @@ input[type="text"] {
     }
     #Activités .card{
         width: 84vw;
-        height: 54vw;
+        height: 200px;
         max-width: none;
        
         
@@ -812,7 +812,7 @@ input[type="text"] {
     }  
     #Activités a {
         width: 84vw;
-        height: 54vw;
+        height: 200px;
     }
     #Activités .section-title{
         padding-left: 15px;
